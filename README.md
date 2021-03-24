@@ -8,13 +8,13 @@ brew install envoy
 brew tap tinygo-org/tools
 brew install tinygo
 
-# work on main.go
+# work on main.go - it has the actual logic for webassembly filter in GO
 
 # build web-assembly
 tinygo build -o ./hello.wasm -scheduler=none -target=wasi ./main.go
 
 
-# work on envoy.yaml
+# work on envoy.yaml - here the custom webassembly filter is added to envoy
 
 # run envoy
 envoy -c envoy.yaml -l debug
