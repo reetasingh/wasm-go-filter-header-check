@@ -1,3 +1,6 @@
+# WebAssembly written in GO and used with Envoy to check HTTP request header and do not allow request if a certain header is not present
+
+In this, we are checking for header `x-header1` to be present
 ```bash
 
 
