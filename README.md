@@ -21,10 +21,11 @@ envoy -c envoy.yaml -l debug
 
 # curl output
 
-output when header present -> Hello World!
-output when header is not present -> request is paused
+
+
 
 ```
+output when header present -> Hello World!
 
 reetasingh-ltm8:~ reetasingh$ 
 reetasingh-ltm8:~ reetasingh$ curl localhost:8085/hello  --header "x-header1:abc" 
@@ -33,6 +34,9 @@ reetasingh-ltm8:~ reetasingh$
 reetasingh-ltm8:~ reetasingh$ 
 reetasingh-ltm8:~ reetasingh$ 
 reetasingh-ltm8:~ reetasingh$ 
+
+output when header is not present -> request is paused
+
 reetasingh-ltm8:~ reetasingh$  curl localhost:8085/hello
 
 
