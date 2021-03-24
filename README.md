@@ -38,5 +38,5 @@ reetasingh-ltm8:~ reetasingh$  curl localhost:8085/hello
 
 ```
 
-# refercence 
+# reference 
 https://tufin.medium.com/extending-envoy-proxy-with-golang-webassembly-e51202809ba6
