@@ -18,7 +18,13 @@ envoy -c envoy.yaml -l debug
 
 ```
 
-```output
+
+# curl output
+
+output when header present -> Hello World!
+output when header is not present -> request is paused
+
+```
 
 reetasingh-ltm8:~ reetasingh$ 
 reetasingh-ltm8:~ reetasingh$ curl localhost:8085/hello  --header "x-header1:abc" 
